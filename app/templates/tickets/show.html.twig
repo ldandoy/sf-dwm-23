@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ticket n°{{ ticket.id}} {% endblock %}
+
+{% block body %}
+    id: {{ ticket.id}}<br />
+    Label: {{ ticket.label}}
+    <div>
+        <a href="{{ path('tickets_list') }}" class="btn btn-success">Retour</a>
+    </div>
+{% endblock %}
